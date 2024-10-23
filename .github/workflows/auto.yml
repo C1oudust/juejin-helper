@@ -31,7 +31,10 @@ jobs:
           timeout_seconds: 15
           max_attempts: 3
           retry_on: error
-          command: cd workflows && yarn &&  yarn checkin
+          command: |
+            cd workflows
+            yarn
+            yarn checkin
 #  SeaGold:
 #    needs: CheckIn
 #    runs-on: ubuntu-latest
