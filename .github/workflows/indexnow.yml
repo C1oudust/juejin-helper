@@ -16,7 +16,7 @@ jobs:
         with:
           sitemap-location: "https://www.yjgalgame.com/sitemap.xml"
           since: 2
-          since-unit: "day"
+          since-unit: "year"
           key: ${{ secrets.INDEXNOW_KEY }}
           limit: 9999
           timeout: 60000
